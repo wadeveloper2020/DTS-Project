@@ -8,7 +8,7 @@
 }
 
 .header {
-  background-image: url(/DTS-Html-Css/assets/img/mount-4.jpg);
+  background-image: url(/assets/img/mount-4.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -139,10 +139,9 @@ nav a {
   text-align: center;
 }
 
-.content .about h2 {
+.content .about h1 {
   font-family: Poppins;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
 }
 
 .content .about p {
@@ -155,8 +154,91 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.test img {
+  width: 450px;
+  height: 500px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.194);
+          box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.194);
+}
+
+.desc-about {
+  width: 700px;
+  height: 500px;
+  margin-top: 50px;
+  padding: 70px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.194);
+          box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.194);
+  background-color: #fffbfb;
+}
+
+.desc-about h1 {
+  text-transform: uppercase;
+}
+
+.gallery h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Poppins;
+  margin-top: 50px;
+}
+
+.gallery p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 4px;
+  margin-top: 50px;
+}
+
+.row .column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.row .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
