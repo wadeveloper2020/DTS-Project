@@ -26,7 +26,7 @@ body .sub-hero {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 148px;
-  padding-right: 148px;
+  padding-right: 150px;
 }
 
 body .sub-hero .left h1, body .sub-hero .left .h1 {
@@ -47,8 +47,8 @@ body .sub-hero .right img {
   width: 243px;
   height: 243px;
   border-radius: 100%;
-  -webkit-box-shadow: #EDF7FA;
-          box-shadow: #EDF7FA;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body main .bio {
@@ -241,7 +241,7 @@ body .footer {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 83px;
+  margin-top: 84px;
 }
 
 body .footer .icon img {

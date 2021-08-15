@@ -18,7 +18,7 @@ body {
         align-items: center;
         flex-wrap: wrap;
         padding-left: 148px;
-        padding-right: 148px;
+        padding-right: 150px;
         .left {
             h1 {
                 font-size: 44px;
@@ -38,7 +38,7 @@ body {
                 width: 243px;
                 height: 243px;
                 border-radius: 100%;
-                box-shadow: #EDF7FA;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
         }
     }
