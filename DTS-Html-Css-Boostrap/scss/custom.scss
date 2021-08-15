@@ -1,14 +1,228 @@
-$btn-primary:hsl(59, 87%, 46%);
-$btn-secondary:#123456;
-
-.btn-primary{
-    width: 200px;
-    height: 100px;
-    background-color: $btn-primary!important;
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Inter:wght@400;600&display=swap');
+//header
+$color-font-1:#21243D;
+* {
+    box-sizing: border-box;
 }
 
-
-
-
+body {
+    margin: 0px;
+    .sub-hero {
+        width: 100%;
+        height: 100vh;
+        font-family: Hebbo;
+        color: $color-font-1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 148px;
+        padding-right: 148px;
+        .left {
+            h1 {
+                font-size: 44px;
+                font-weight: 700;
+                font-style: normal;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+                text-align: justify;
+            }
+        }
+        .right {
+            img {
+                width: 243px;
+                height: 243px;
+                border-radius: 100%;
+                box-shadow: #EDF7FA;
+            }
+        }
+    }
+    // bio section 
+    $bg-bio: #EDF7FA;
+    $color-font-2: #136223;
+    $color-font-3: #52575C;
+    $color-font-4: #000000;
+    $color-font-5: #142850;
+    main {
+        .bio {
+            background-color: $bg-bio;
+            width: 100%;
+            height: 396px;
+            font-family: Inter;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-left: 148px;
+            padding-right: 148px;
+            padding-top: 12px;
+            .contact {
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-style: normal;
+                    color: $color-font-2;
+                    text-transform: uppercase;
+                }
+                .info {
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-style: normal;
+                    color: #000000;
+                    div {
+                        img {
+                            margin-right: 16px;
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+            .education {
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-style: normal;
+                    color: $color-font-2;
+                    text-transform: uppercase;
+                }
+                .sub-edu {
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 600;
+                        font-style: normal;
+                        color: $color-font-4;
+                    }
+                    p {
+                        font-size: 12px;
+                        font-weight: 400;
+                        font-style: italic;
+                        color: $color-font-4;
+                    }
+                    ul {
+                        li {
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .experience {
+        margin-left: 148px;
+        margin-right: 148px;
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            font-style: normal;
+            color: $color-font-2;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            margin-top: 29px;
+            margin-bottom: 46px;
+        }
+        .sub-exp {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .left {
+                margin-bottom: 15px;
+                margin-right: 16px;
+                h2 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: $color-font-1;
+                }
+                button {
+                    width: 62px;
+                    height: 25px;
+                    color: $bg-bio;
+                    background-color: $color-font-5;
+                    margin-right: 12px;
+                    margin-bottom: 16px;
+                    border-radius: 50px;
+                }
+            }
+            span {
+                font-size: 20px;
+                color: #8695A4;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
+        img {
+            width: 246px;
+            height: 180px;
+        }
+        .right {
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+                font-style: normal;
+                color: $color-font-1;
+            }
+            button {
+                width: 62px;
+                height: 25px;
+                color: $bg-bio;
+                background-color: $color-font-5;
+                margin-right: 12px;
+                margin-bottom: 16px;
+                border-radius: 50px;
+                border: none;
+            }
+            span {
+                font-size: 20px;
+                color: #8695A4;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
+        hr {
+            width: 858px;
+            height: 2px;
+            background-color: $color-font-3;
+            margin-bottom: 31px;
+        }
+    }
+    .footer {
+        width: 100%;
+        height: 182px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 83px;
+        .icon {
+            img {
+                width: 30px;
+                height: 30px;
+                margin-right: 35px;
+            }
+            p {
+                font-family: Hebbo;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                margin-top: 26px;
+                margin-right: 24px;
+            }
+        }
+    }
+}
 
 @import "../bootstrap-5.1.0/scss/bootstrap.scss";
